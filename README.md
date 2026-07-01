@@ -111,7 +111,7 @@ npm start
 
 ---
 
-# Vistas Principales
+# Vistas Principales REACT
 **Vista Login**
 
 <img src="./images/login.png" alt="vista inicio" width="1000">
@@ -131,6 +131,16 @@ npm start
 **Vista cerrar Sesión**
 
 <img src="./images/cerrarsesion.png" alt="vista inicio" width="1000">
+
+# Vistas Principales NEXT.js
+
+**Vista Inicio**
+
+<img src="./images/vistaPrin2.png" alt="vista inicio" width="1000">
+
+**Vista catalogo de cursos**
+
+<img src="./images/vistasec2.png" alt="vista inicio" width="1000">
 
 #  Sustentación en Video
 
