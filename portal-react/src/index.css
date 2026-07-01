@@ -1,0 +1,235 @@
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+body { 
+    background-color: #fdfaf6; 
+    color: #3e2723; 
+}
+
+.container { 
+    width: 90%; 
+    max-width: 1000px; 
+    margin: 2.5rem auto; 
+}
+
+.card { 
+    background: white; 
+    border-radius: 16px; 
+    padding: 1.8rem; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #f2ebe1;
+}
+
+.card:hover { 
+    transform: translateY(-4px); 
+    box-shadow: 0 10px 20px rgba(93, 64, 55, 0.08); 
+}
+
+.login-container { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    background: radial-gradient(circle at top left, #efebe9, #fdfaf6); 
+}
+
+.login-card { 
+    width: 100%; 
+    max-width: 400px; 
+    padding: 2.5rem; 
+}
+
+.login-card h2 { 
+    margin-bottom: 2rem; 
+    text-align: center; 
+    color: #5d4037; 
+    font-size: 1.8rem; 
+}
+
+.input-group { 
+    margin-bottom: 1.2rem; 
+}
+
+.input-group label { 
+    display: block; 
+    margin-bottom: 0.5rem; 
+    font-weight: 600; 
+    font-size: 0.9rem; 
+}
+
+.input-group input { 
+    width: 100%; 
+    padding: 0.8rem; 
+    border: 2px solid #f2ebe1; 
+    border-radius: 8px; 
+    outline: none; 
+    transition: border-color 0.3s ease; 
+}
+
+.input-group input:focus { 
+    border-color: #5d4037; 
+}
+
+.error { 
+    color: #e53935; 
+    font-weight: bold; 
+    margin-bottom: 1rem; 
+    text-align: center; 
+    background: #ffebee; 
+    padding: 10px; 
+    border-radius: 8px; 
+}
+
+.navbar { 
+    background-color: #3e2723; 
+    color: #fdfaf6; 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 1.2rem 5%; 
+    align-items: center; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+}
+
+.nav-brand { 
+    font-size: 1.4rem; 
+    font-weight: 800; 
+    color: #d7ccc8; 
+    letter-spacing: 0.5px; 
+}
+
+.nav-links { 
+    display: flex; 
+    gap: 2rem; 
+    align-items: center; 
+}
+
+.nav-links a { 
+    color: #fdfaf6; 
+    text-decoration: none; 
+    font-weight: 500; 
+    transition: color 0.2s; 
+}
+
+.nav-links a:hover { 
+    color: #d7ccc8; 
+}
+
+.dropdown { 
+    position: relative; 
+    display: inline-block; 
+}
+
+.dropbtn { 
+    background: rgba(255,255,255,0.1); 
+    border: none; 
+    color: white; 
+    padding: 8px 16px; 
+    border-radius: 20px; 
+    font-size: 0.95rem; 
+    cursor: pointer; 
+    font-weight: 600; 
+    transition: background 0.2s; 
+}
+
+.dropbtn:hover { 
+    background: rgba(255,255,255,0.2); 
+}
+
+.dropdown-content { 
+    display: none; 
+    position: absolute; 
+    right: 0; 
+    background-color: white; 
+    min-width: 160px; 
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.1); 
+    z-index: 1; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    margin-top: 0.8rem; 
+}
+
+.dropdown:hover .dropdown-content { 
+    display: block; 
+}
+
+.dropdown-content button { 
+    color: #3e2723; 
+    padding: 14px 20px; 
+    text-decoration: none; 
+    display: block; 
+    width: 100%; 
+    text-align: left; 
+    border: none; 
+    background: white; 
+    cursor: pointer; 
+    font-weight: 600; 
+    font-size: 0.9rem; 
+}
+
+.dropdown-content button:hover { 
+    background-color: #efebe9; 
+    color: #5d4037; 
+}
+
+.btn-primary { 
+    width: 100%; 
+    padding: 0.85rem; 
+    background-color: #5d4037; 
+    color: white; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-size: 1rem; 
+    font-weight: 700; 
+    transition: background-color 0.2s, transform 0.1s; 
+}
+
+.btn-primary:hover { 
+    background-color: #3e2723; 
+}
+
+.btn-primary:active { 
+    transform: scale(0.98); 
+}
+
+.btn-secondary { 
+    padding: 0.6rem 1.2rem; 
+    background-color: #efebe9; 
+    color: #5d4037; 
+    border: 2px solid #d7ccc8; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    margin-top: 1.2rem; 
+    font-weight: 600; 
+    transition: all 0.2s ease; 
+}
+
+.btn-secondary:hover { 
+    background-color: #5d4037; 
+    color: white; 
+    border-color: #5d4037; 
+}
+
+h1 { 
+    color: #3e2723; 
+    margin-bottom: 2rem; 
+    font-size: 2.2rem; 
+    letter-spacing: -0.5px; 
+}
+
+h3 { 
+    color: #5d4037; 
+    margin-bottom: 0.8rem; 
+    font-size: 1.3rem; 
+}
+
+.grid-cursos { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
+    gap: 2rem; 
+}
